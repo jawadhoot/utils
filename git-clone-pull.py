@@ -2,7 +2,9 @@ import os
 from pathlib import Path
 
 url = "https://github.com/jawadhoot/"
-repos = ["aatp", "dotcom" , "knockoffmania", "pibot", "pixel-art", "resume", "story-board", "utils"]
+repos = ["aatp", "dotcom" , "knockoffmania",
+         "pibot", "pixel-art", "resume",
+         "story-board", "utils", "sebi-docs"]
 workspace = Path.home().joinpath("workspace")
 print(str(workspace))
 if not Path.is_dir(workspace):
