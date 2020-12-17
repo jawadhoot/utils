@@ -4,7 +4,7 @@ from pathlib import Path
 url = "https://github.com/jawadhoot/"
 repos = ["aatp", "dotcom" , "knockoffmania",
          "pibot", "pixel-art", "resume",
-         "story-board", "utils", "sebi-docs"]
+         "story-board", "utils"]
 workspace = Path.home().joinpath("workspace")
 print(str(workspace))
 if not Path.is_dir(workspace):
@@ -18,4 +18,4 @@ for repo in repos:
     os.system("git clone " + url + repo)
   os.chdir(repo_dir)
   os.system("git pull")
-  os.system("git push")
+  #os.system("git push")
