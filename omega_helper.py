@@ -127,7 +127,6 @@ def transform_a4_wall(im):
 def get_tilemap(im):
   basetiles = {}
   tilemap = {}
-  in_array = []
  # subtiles = split_cr(im,16,12)
   subtiles = split_wh(im,16,16,True)
   #subtiles = split_cr(im,4,6)
